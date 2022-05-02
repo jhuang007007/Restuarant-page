@@ -1,5 +1,8 @@
 import {loadPage} from './init.js';
 
-console.log('this is working!')
-
 loadPage()
+const content = document.querySelector('#content')
+
+const switchTab = (() => {
+    
+})();
