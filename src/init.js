@@ -1,3 +1,5 @@
+import kenchHome from './images/chef-kench-home.png'
+
 //module for initial page-load
 const loadPage = () => {
   //select starter html
@@ -74,7 +76,7 @@ const loadPage = () => {
   disclaimer.textContent = 'This website was created under Riot Games\' "Legal Jibber Jabber" policy using assets owned by Riot Games.  Riot Games does not endorse or sponsor this project. \'Kench Cuisine\' is not a real business entity.';
   creator.textContent = '-link to creator-';
   creator.href = 'https://github.com/jhuang007007';
-  chef.src = '../src/images/chef-kench-home.png';
+  chef.src = kenchHome;
   chef.style.animation = '1s popAnimation linear'; //chef animation
   homeTitle.textContent = 'Home';
   menuTitle.textContent = 'Menu';

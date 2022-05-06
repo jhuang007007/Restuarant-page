@@ -1,5 +1,9 @@
 import {loadPage} from './init.js';
 import './style.css';
+import kenchHome from './images/chef-kench-home.png'
+import kenchMenu from './images/chef-kench-menu.png'
+import kenchContact from './images/chef-kench-contact.png'
+
 
 loadPage()
 // const content = document.querySelector('#content')
@@ -19,22 +23,22 @@ function highlightTab(tab) {
 
 home.addEventListener('click', () => {
   highlightTab(home)
-  if (chef.src !== '../src/images/chef-kench-home.png') {
-    chef.src = '../src/images/chef-kench-home.png';
+  if (chef.src !== kenchHome) {
+    chef.src = kenchHome;
   }
   homeTitle.scrollIntoView()
 })
 menu.addEventListener('click', () => {
   highlightTab(menu)
-  if (chef.src !== '../src/images/chef-kench-menu.png') {
-    chef.src = '../src/images/chef-kench-menu.png';
+  if (chef.src !== kenchMenu) {
+    chef.src = kenchMenu;
   }
   menuTitle.scrollIntoView()
 })
 contact.addEventListener('click', () => {
   highlightTab(contact) 
-  if (chef.src !== '../src/images/chef-kench-contact.png') {
-    chef.src = '../src/images/chef-kench-contact.png';
+  if (chef.src !== kenchContact) {
+    chef.src = kenchContact;
   }
   contactTitle.scrollIntoView()
 })
