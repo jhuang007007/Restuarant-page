@@ -205,6 +205,27 @@ h1 {
   background-image: url('images/background-image-menu.jpg');
 }
 
+.menu-item {
+  width: 300px;
+  height: auto;
+}
+
+.menu-item-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-bottom: 20px;
+}
+
+.menu-item-container > div > p {
+  color: #001219;
+  margin-top: 10px;
+}
+
+h2 {
+  font-family: 'Cinzel Decorative';
+  color: #001219;
+}
+
 .contact-div {
   background-image: url('images/background-image-contact.jpg');
 }
@@ -252,10 +273,11 @@ a {
   position: fixed;
   bottom: 0px;
   right: 0px;
-  width: 40vh;
+  width: 35vh;
 }
 
 @keyframes popAnimation{
-  0% {right: -45vh}
+  0% {right: -40vh}
   100% {right: 0}
 }
+

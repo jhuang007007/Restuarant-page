@@ -1,4 +1,6 @@
 import kenchHome from './images/chef-kench-home.png'
+import junglersDelight from './images/junglers-delight.png'
+import baronNashor from './images/baron-nashor.png'
 
 //module for initial page-load
 const loadPage = () => {
@@ -27,6 +29,16 @@ const loadPage = () => {
   const contact = document.createElement('li')
   const disclaimer = document.createElement('p')
   const chef = document.createElement('img')
+  const menuContainerOne = document.createElement('div')
+  const menuItemOne = document.createElement('img')
+  const menuItemDescriptionContainerOne = document.createElement('div')
+  const menuDescriptionOne = document.createElement('p')
+  const menuItemNameOne = document.createElement('h2')
+  const menuContainerTwo = document.createElement('div')
+  const menuItemTwo = document.createElement('img')
+  const menuItemDescriptionContainerTwo = document.createElement('div')
+  const menuDescriptionTwo = document.createElement('p')
+  const menuItemNameTwo = document.createElement('h2')
   //add ids
   main.id = 'main';
   home.id = 'home';
@@ -46,6 +58,12 @@ const loadPage = () => {
   homeTitle.classList.add('title', 'home-title')
   menuTitle.classList.add('title', 'menu-title')
   contactTitle.classList.add('title', 'contact-title')
+  menuContainerOne.classList.add('menu-item-container')
+  menuItemOne.classList.add('menu-item')
+  menuItemNameOne.classList.add('menu-item-name')
+  menuContainerTwo.classList.add('menu-item-container')
+  menuItemTwo.classList.add('menu-item')
+  menuItemNameTwo.classList.add('menu-item-name')
   //append to DOM
   body.appendChild(nav)
   body.appendChild(homeTitle)
@@ -54,6 +72,16 @@ const loadPage = () => {
   body.appendChild(menuTitle)
   body.appendChild(menuDiv)
   menuDiv.appendChild(menuContent)
+  menuContent.appendChild(menuContainerOne)
+  menuContainerOne.appendChild(menuItemOne)
+  menuContainerOne.appendChild(menuItemDescriptionContainerOne)
+  menuItemDescriptionContainerOne.appendChild(menuItemNameOne)
+  menuItemDescriptionContainerOne.appendChild(menuDescriptionOne)
+  menuContent.appendChild(menuContainerTwo)
+  menuContainerTwo.appendChild(menuItemTwo)
+  menuContainerTwo.appendChild(menuItemDescriptionContainerTwo)
+  menuItemDescriptionContainerTwo.appendChild(menuItemNameTwo)
+  menuItemDescriptionContainerTwo.appendChild(menuDescriptionTwo)
   body.appendChild(contactTitle)
   body.appendChild(contactDiv)
   contactDiv.appendChild(contactContent)
@@ -82,6 +110,13 @@ const loadPage = () => {
   menuTitle.textContent = 'Menu';
   contactTitle.textContent = 'Contact';
   homeContent.textContent = 'MONDAY - SUNDAY 1:00AM - 8:00AM'
+  menuItemOne.src = junglersDelight;
+  menuDescriptionOne.textContent = 'Freshly caught live scuttle crab garnished with honeyfruit.'
+  menuItemNameOne.textContent = 'Jungler\'s delight';
+  menuItemTwo.src = baronNashor;
+  menuDescriptionTwo.textContent = 'Yummy!'
+  menuItemNameTwo.textContent = 'Baron Nashor';
+  contactContent.textContent = 'Contact Chef Kench at your local river or email him at Kench-Eats-Everything@benchedthekench.org'
 }
 
 export {
